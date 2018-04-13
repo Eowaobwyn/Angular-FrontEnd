@@ -1,7 +1,7 @@
 language: node_js
-node_js:
-  -  dist: trusty
+node_js: 
   - stable
+dist: trusty
 before_script:
   - npm install -g @angular/cli
 script:
