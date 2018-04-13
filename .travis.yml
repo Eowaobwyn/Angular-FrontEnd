@@ -5,7 +5,7 @@ dist: trusty
 before_script:
   - npm install -g @angular/cli
 script:
-  - ng build --prod --bh /Angular Front/
+  - ng build --prod --bh /Angular-FrontEnd/
 deploy:
   provider: pages
   skip-cleanup: true
