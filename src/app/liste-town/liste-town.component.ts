@@ -11,7 +11,6 @@ import { MeteoTownService } from '../meteotown.service';
 export class ListeTownComponent implements OnInit {
 
   towns: Town[] = [];
-  
   constructor(private meteoTownService: MeteoTownService) { }
 
   ngOnInit() {
