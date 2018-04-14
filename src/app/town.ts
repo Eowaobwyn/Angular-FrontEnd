@@ -1,8 +1,12 @@
 export class Town {
-  id: number
-  name: string
-  icon: string
-  temperature: number
-  
+  id: string;
+  city: string;
+  postcode: string;
+  latitude: string;
+  longitude: number;
+  weather: string;
 
+  constructor(values: Object = {}) {
+    Object.assign(this, values);
+  }
 }

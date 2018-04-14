@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Town } from '../town';
 
 @Component({
@@ -7,8 +7,8 @@ import { Town } from '../town';
   styleUrls: ['./meteo.component.css']
 })
 export class MeteoComponent implements OnInit {
-
-  town: Town = {id: 1, name: 'belfort', temperature: 0, icon: "rain"}
+  
+  @Input() town: Town;
   
   constructor() { }
 
