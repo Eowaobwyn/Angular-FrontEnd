@@ -1,3 +1,10 @@
-<p>
-  {{town.id}} {{town.city}} {{town.weather.temperature}}
-</p>
+<div class="card text-white bg-dark mb-3">
+  <div class="card-header">{{town.city}}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{town.weather.temperature}} °C</h5>
+    <i class="wi fa-3x  wi-forecast-io-{{town.weather.icon}}"></i>
+    <agm-map [latitude]="town.latitude" [longitude]="town.longitude">
+      <agm-marker [latitude]="town.latitude" [longitude]="town.longitude"></agm-marker>
+    </agm-map>
+  </div>
+</div>

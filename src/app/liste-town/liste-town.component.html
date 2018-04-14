@@ -1,3 +1,13 @@
-<div *ngFor="let town of towns;">
-  <app-meteo [town]="town"></app-meteo>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3 text-center">
+      <h1>Drop the meteo BITCHES</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6" *ngFor="let town of towns">
+        <app-meteo [town]="town"></app-meteo>
+    </div>
+  </div>
 </div>

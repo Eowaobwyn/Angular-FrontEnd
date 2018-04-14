@@ -6,7 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MeteoComponent } from './meteo/meteo.component';
-import { ListeTownComponent } from './liste-town/liste-town.component'
+import { ListeTownComponent } from './liste-town/liste-town.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -18,7 +19,10 @@ import { ListeTownComponent } from './liste-town/liste-town.component'
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCiGDkS4CdsBAYZvm9JZfUVBMRqoISNffA'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
